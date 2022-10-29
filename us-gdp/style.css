@@ -1,0 +1,35 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.bar {
+    fill: rgb(69, 106, 122);
+}
+
+.bar:hover {
+    fill: #fff;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: rgb(184, 229, 250);
+    padding: 1%;
+    border-radius: 0.2rem;
+    text-align: center;
+    pointer-events: none;
+}

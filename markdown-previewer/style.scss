@@ -1,0 +1,55 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: hsl(194, 50%, 80%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#editorSection,
+#previewSection {
+    background-color: #fff;
+    margin-right: 10%;
+    height: 95vh;
+    min-width: 20vw;
+    box-shadow: 0 0 0.5rem black;
+    border-radius: 0.3rem;
+    .bar {
+        background-color: hsl(194, 50%, 80%);
+        h1 {
+            text-align: center;
+            margin-top: -0.2%;
+        }
+    }
+}
+
+#previewSection {
+    overflow: auto;
+    width: 40vw;
+}
+
+#editor {
+    font-family: monospace;
+    width: 30vw;
+    height: 85vh;
+    resize: none;
+}
+
+#preview {
+    margin-left: 10%;
+    code {
+        font-family: monospace;
+        background-color: rgb(238, 238, 238);
+        padding: 2%;
+    }
+
+    p > code {
+        padding: 2px;
+    }
+}

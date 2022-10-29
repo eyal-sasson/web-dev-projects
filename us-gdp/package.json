@@ -1,0 +1,13 @@
+{
+  "name": "us-gdp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chart.js",
+  "dependencies": {
+    "@types/d3": "^7.0.0",
+    "d3": "^7.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

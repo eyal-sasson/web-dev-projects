@@ -1,0 +1,73 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#drum-machine {
+    display: grid;
+    grid-template: "Q W E ." 1fr "A S D display" 1fr "Z X C ." 1fr / 1fr 1fr 1fr 2fr;
+    margin: auto;
+    margin-top: 20vh;
+    width: 30%;
+    align-items: center;
+}
+
+.drum-pad {
+    padding: 20% 10%;
+    margin: 5%;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 0.2vw;
+    background-color: rgb(214, 211, 211);
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+.drum-pad:active {
+    background-color: rgb(127, 127, 190);
+    box-shadow: none;
+}
+
+#display {
+    grid-area: display;
+    margin-left: 20%;
+    background-color: rgb(214, 211, 211);
+    text-align: center;
+    padding: 10% 0;
+}
+
+#Heater-1 {
+    grid-area: Q;
+}
+
+#Heater-2 {
+    grid-area: W;
+}
+
+#Heater-3 {
+    grid-area: E;
+}
+
+#Heater-4 {
+    grid-area: A;
+}
+
+#Clap {
+    grid-area: S;
+}
+
+#Open-HH {
+    grid-area: D;
+}
+
+#Kick-n\'-Hat {
+    grid-area: Z;
+}
+
+#Kick {
+    grid-area: X;
+}
+
+#Closed-HH {
+    grid-area: C;
+}

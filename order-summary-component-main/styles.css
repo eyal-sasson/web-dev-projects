@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url("images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#main-img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+@media (max-width: 1440px) {
+    body {
+        background: url("images/pattern-background-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--pale-blue);
+    }
+    main {
+        width: 90%;
+    }
+}
+
+main h1 {
+    margin-top: 40px;
+    color: var(--dark-blue);
+}
+
+#description {
+    font-size: 16px;
+    margin: 10px 70px 10px 70px;
+    color: var(--desaturated-blue);
+}
+
+#plan {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--very-pale-blue);
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 16px;
+    margin: 15px;
+}
+
+#plan img {
+    width: auto;
+    align-self: center;
+}
+
+#plan-detail {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px 5px 20px;
+    color: var(--desaturated-blue);
+}
+
+#plan-detail h2 {
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+#plan button {
+    display: inline-block;
+    height: 16px;
+    background-color: var(--very-pale-blue);
+    justify-self: center;
+    color: var(--bright-blue);
+    margin: 5px 5px 5px 50px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#plan button:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+#payment {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 10px 20% 10px 20%;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px var(--desaturated-blue);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#payment:hover {
+    background-color: var(--desaturated-blue);
+}
+
+#cancel {
+    background-color: white;
+    color: var(--desaturated-blue);
+    padding: 10px 25% 20px 25%;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#cancel:hover {
+    color: var(--dark-blue);
+}

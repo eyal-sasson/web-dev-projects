@@ -1,0 +1,67 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #b3dae6;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+#editorSection,
+#previewSection {
+  background-color: #fff;
+  margin-right: 10%;
+  height: 95vh;
+  min-width: 20vw;
+  -webkit-box-shadow: 0 0 0.5rem black;
+          box-shadow: 0 0 0.5rem black;
+  border-radius: 0.3rem;
+}
+
+#editorSection .bar,
+#previewSection .bar {
+  background-color: #b3dae6;
+}
+
+#editorSection .bar h1,
+#previewSection .bar h1 {
+  text-align: center;
+  margin-top: -0.2%;
+}
+
+#previewSection {
+  overflow: auto;
+  width: 40vw;
+}
+
+#editor {
+  font-family: monospace;
+  width: 30vw;
+  height: 85vh;
+  resize: none;
+}
+
+#preview {
+  margin-left: 10%;
+}
+
+#preview code {
+  font-family: monospace;
+  background-color: #eeeeee;
+  padding: 2%;
+}
+
+#preview p > code {
+  padding: 2px;
+}
+/*# sourceMappingURL=style.css.map */

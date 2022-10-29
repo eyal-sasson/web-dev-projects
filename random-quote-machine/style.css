@@ -1,0 +1,17 @@
+body, #new-quote, #tweet-quote {
+    transition: 2s;
+}
+
+#quote-box {
+    width: 600px;
+}
+
+#text {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#author {
+    font-size: 22px;
+    font-weight: 200;
+}
